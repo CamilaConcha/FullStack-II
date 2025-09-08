@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Tienda de Figuras</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- Sección de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-tienda">
+            <div class="container d-flex align-items-center">
+                <a href="index.html" class="d-flex align-items-center">
+                    <img src="assets/img/logo-sin-fondo-2.png" alt="Logo Tienda Figuras" style="height:40px; width:auto;">
+                    <span class="navbar-brand ms-2 mb-0 h1"></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="carrito.html">
+                                <img src="assets/img/carrito-de-compras.png" alt="Carrito"
+                                    style="width:24px; height:24px;">
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link d-flex align-items-center" href="contacto.html">
+                                <img src="assets/img/avion-de-papel.png" alt="Contacto"
+                                    style="width:24px; height:24px;"></a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="usuarioDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/img/circulo-de-usuario.png" alt="Usuario"
+                                    style="width:24px; height:24px;">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="usuarioDropdown">
+                                <li><a class="dropdown-item" href="registro.html">Registrate</a></li>
+                                <li><a class="dropdown-item" href="login.html">Iniciar sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin navegación -->
+
+    <main class="container py-4 flex-grow-1 d-flex flex-column align-items-center justify-content-center">
+        <!-- Logo de la tienda -->
+        <img src="assets/img/logo-sin-fondo.png" alt="Logo Tienda Figuras" style="height:60px; width:auto; margin-bottom:2rem;">
+        <!-- Sección de registro -->
+        <section class="row justify-content-center w-100" style="max-width:400px;">
+            <div class="col-12">
+                <form class="bg-white p-4 rounded shadow-sm">
+                    <fieldset>
+                        <legend class="mb-3 text-center">Registro de usuario</legend>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Registrarse</button>
+                    </fieldset>
+                    <div class="mt-4 text-center">
+                        <p class="mb-1">¿Ya tienes cuenta? <a href="login.html">Ingresa aquí</a></p>
+                        <p class="mb-1">¿Olvidaste tu contraseña? <a href="#">Recupérala aquí</a></p>
+                        <p class="mb-0">¿Por qué registrarse? <span class="text-muted">Podrás comprar, guardar favoritos y recibir ofertas.</span></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer-tienda bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Información de la tienda -->
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Tienda Figuras Chile</h5>
+                    <p class="mb-1">Las mejores figuras de colección en Chile.</p>
+                    <p class="mb-1">Av. Providencia 1234, Santiago</p>
+                    <p class="mb-1">contacto@figuraschile.cl</p>
+                    <p class="mb-1">+56 9 1234 5678</p>
+                </div>
+                <!-- Enlaces rápidos -->
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Catálogo</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Carrito</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Contacto</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Registro</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+                <!-- Redes sociales -->
+                <div class="col-12 col-md-4">
+                    <h5 class="mb-3">Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <span class="bg-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:32px; height:32px;"><img src="assets/img/twitter-alt-circle.png"
+                                alt="Twitter" style="width:20px;"></span>
+                        <span class="bg-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:32px; height:32px;"><img src="assets/img/instagram.png"
+                                alt="Instagram" style="width:20px;"></span>
+                        <span class="bg-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:32px; height:32px;"><img src="assets/img/facebook.png" alt="Facebook"
+                                style="width:20px;"></span>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row">
+                <div class="col text-center">
+                    <small class="text-white-50">&copy; 2025 Tienda Figuras Chile. Todos los derechos
+                        reservados.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

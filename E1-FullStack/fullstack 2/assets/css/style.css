@@ -1,0 +1,116 @@
+/* =============================
+   Estilos de elementos HTML
+   ============================= */
+:root {
+    --color-fondo-tienda: #FFF8E7; 
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--color-fondo-tienda);
+    color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =============================
+   Clases personalizadas
+   ============================= */
+
+.banner-home {
+    background: linear-gradient(90deg, #1A1A1A 60%, #FF8FAB 80%, #9AD0EC 100%);
+    color: #fff;
+    padding: 3rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.categorias-home {
+    margin-top: 2rem;
+}
+
+.categoria-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.categoria-card:hover {
+    transform: scale(1.05);
+}
+
+.producto-destacado {
+    border: 2px solid #ebdbe8;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.navbar-tienda {
+    background: linear-gradient(90deg, #1A1A1A 62%,#FFF0E0 70%, #FFC9D4 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.carrusel-tienda {
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    overflow: hidden;
+}
+
+/* =============================
+   IDs personalizados
+   ============================= */
+
+#filtros-catalogo {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+}
+
+#resumen-carrito {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+}
+
+/* =============================
+   Utilidades
+   ============================= */
+
+.u-texto-pequeno {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.u-margen-arriba {
+    margin-top: 2rem;
+}
+
+.u-margen-abajo {
+    margin-bottom: 2rem;
+}
